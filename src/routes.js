@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack'; 
 
-import HomeTemp from './modules';
+import { Catalago } from './modules';
 
 const Stack = createStackNavigator();
 
@@ -12,9 +12,9 @@ const Routes = () => {
             <Stack.Navigator>
                 <Stack.Screen 
                     name='HomeTemp'
-                    component={HomeTemp}
+                    component={Catalago}
                     options={{
-                        title: 'Pagina Inicial',
+                        title: 'Catálogo',
                         headerTitleAlign: 'center'
                     }}
                 />
