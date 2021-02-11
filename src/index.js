@@ -3,13 +3,13 @@ import { StatusBar } from 'expo-status-bar';
 import { Provider } from 'react-redux';
 
 import store from './store';
-import HomeTemp from './modules';
+import Routes from './routes';
 
 export default function Index() {
   return (
     <Provider store={store}>
       <StatusBar style="auto" />
-      <HomeTemp />
+      <Routes />
     </Provider>
   );
 }
