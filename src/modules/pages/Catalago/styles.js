@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { FlatList } from 'react-native';
 
-export const Container = styled.View`
+export const Container = styled.SafeAreaView`
     flex: 1;
     align-items: center;
+    padding-top: 40px;
 `;
 
 export const ProductContainer = styled.View`
@@ -30,7 +31,7 @@ export const Product = styled.View`
 
 export const ProductImage = styled.Image`
     width: 90%;
-    height: 220px;
+    height: 140px;
     align-self: center;
 `;
 
@@ -60,8 +61,8 @@ export const ProductPrice = styled.Text`
 
 export const ProductButton = styled.TouchableOpacity`
     background: #4f5564;
-    padding: 4px 8px;
-    border-radius: 100px;
+    padding: 8px 10px;
+    border-radius: 10px;
     align-items: center;
     flex-direction: row;
 `;
